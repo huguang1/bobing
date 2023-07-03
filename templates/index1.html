@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/css.css">
+	<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/scroll.js"></script>
+	
+	<title></title>
+</head>
+<body>
+{% csrf_token %}
+	<div class="zqtop">
+		<div class="zqtopmain">
+			<span class="zuob">
+				<img src="../static/images/t1.png">
+				<img src="../static/images/t2.png">
+				<img src="../static/images/t4.png">
+			7x24小时在线电话客服</span>
+			<span class="youb"><img src="../static/images/t3.png"> 澳门热线:00853-62526999</span>
+		</div>
+	</div>
+	<div class="navb">
+		<div class="navbmain">
+			<ul>
+				<li><a href="">官网首页</a></li>
+				<li><a href="">免费开户</a></li>
+				<li><a href="javascript:;" class="queryBox">中奖查询</a></li>
+				<li><a href="">抽奖规则</a></li>
+				<li><a href="">优惠活动</a></li>
+				<li><a href="">在线客服</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="zqban"></div>
+	<div class="zqmain">
+		<div class="hjblock">
+			<img src="../static/images/dui1.png" class="duil1">
+			<img src="../static/images/dui2.png" class="duil2">
+			<div class="gainlf left">
+				<h2>获奖名单</h2>
+				<div class="gaincn">	
+					<ul id="lottery_list">
+					</ul>									
+				</div>
+			</div>
+			<div class="dengcn left">
+				<a href="javascript:;" class="btn_start"></a>
+				<div class="wanout">
+					<img src="../static/images/1.png" class="ii1">
+					<img src="../static/images/1.png" class="ii2">
+					<img src="../static/images/1.png" class="ii3">
+					<img src="../static/images/1.png" class="ii4">
+					<img src="../static/images/1.png" class="ii5">
+					<img src="../static/images/1.png" class="ii6">
+				</div>
+			</div>
+		</div>
+		<div class="rllp">
+			<h3>博饼规则与礼品</h3>
+			<table class="zqtab">
+				<tr class="trh">
+					<th colspan="9"></th>							
+				</tr>
+				<tr>
+					<td width="148" rowspan="5"><h4>状元</h4></td>
+					<td width="216">状元插金花</td>
+					<td width="66"><img src="../static/images/rl4.png"/></td>
+					<td width="66"><img src="../static/images/rl4.png"/></td>
+					<td width="66"><img src="../static/images/rl4.png"/></td>
+					<td width="66"><img src="../static/images/rl4.png"/></td>
+					<td width="66"><img src="../static/images/rl1.png"/></td>
+					<td width="66"><img src="../static/images/rl1.png"/></td>
+					<td width="200"></td>
+				</tr>
+				<tr>					
+					<td>满堂红</td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>满地锦</td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>五子登科</td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>状元</td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>榜眼</td>
+					<td>对堂</td>
+					<td><img src="../static/images/rl1.png"/></td>
+					<td><img src="../static/images/rl2.png"/></td>
+					<td><img src="../static/images/rl3.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl5.png"/></td>
+					<td><img src="../static/images/rl6.png"/></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>探花</td>
+					<td>三红</td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>进士</td>
+					<td>四进</td>
+					<td><img src="../static/images/rl3.png"/></td>
+					<td><img src="../static/images/rl3.png"/></td>
+					<td><img src="../static/images/rl3.png"/></td>
+					<td><img src="../static/images/rl3.png"/></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>举人</td>
+					<td>二举</td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>					
+					<td>秀才</td>
+					<td>一秀</td>
+					<td><img src="../static/images/rl4.png"/></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="rllp">
+			<h3>活动细则</h3>
+			<ul class="xizeul">
+				<li>1. 凡美东时间2017年9月30日至10月8日期间，每天单笔存款500元以上即可自动参与此优惠；</li>
+				<li>2. 当日符合条件的会员，可在次日北京时间15:00~29:59期间进入【博饼网址4545454.com】进行大显身手；</li>
+				<li>3. 当日单笔最大存款500元以上次日即可自动参与此优惠，如会员分别存款800、3000、10000，则以单笔最高10000为准；</li>
+				<li>4. 强烈建议会员使用网银转账或在线网银进行大额支付，如会员不会操作请马上联系7x24小时在线客服进行咨询；</li>
+				<li>5. 如会员无法单笔大额支付，可一次性多笔支付后并且未进行下注之前联系在线客服为您备注，可视为单笔支付；</li>
+				<li>6. 博饼活动为【澳门银河0208.cm】系统程序自动运行，博饼概率完全遵循力学及自然概率，不涉及任何人工操作，博饼结果以系统判定为准；</li>
+				<li>7. 每位玩家﹑每一住址 、每一个电子邮箱地址﹑每一个电话号码、相同IP地址以及共享电脑网络（例如网吧，电子教室，局域网等）只能够于同区间享有一次优惠；若会员有重复申请账号行为，公司保留取消或收回会员优惠的权利。</li>
+				<li>8. 参与该优惠，即表示您同意《优惠规则与条款》。</li>
+			</ul>
+		</div>
+	</div>
+<!-- 未登录时要登录 -->
+<div id="logBox" class="tanshow" style="display: none;">
+	<div class="tanbg"></div>	
+ 	<div class="pop_box">
+        <div class="pop_header">
+          <h2>输入账号</h2>
+          <span class="close pop_close"></span>
+        </div>
+
+        <div class="pop_body">
+          <div class="text_box">
+
+              <p class="mt50"><input name="member_name" class="input" value="" id="login-na" placeholder="输入会员账号"></p>
+              <div class="mt10">
+                <button type="button" class="mt10 bet_btn" onclick="login()">登入抽奖</button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+</div>	
+<!-- 获得的奖项 -->
+<div class="zdtan" style="display: none;">
+	<div class="zdtanbg"></div>
+	<div class="yttan">
+		<a href="javascript:;" class="qclose"></a>
+        <p class="congt">恭喜您博得<span id="msg">状元插金花</span>中的<span id="prize">iphon X</span></p>
+	</div>
+</div>	
+<!-- 中奖查询 -->
+<div id="queryBox" class="tanshow" style="display: none;">
+	<div class="tanbg"></div>
+    <div class="tanmainzh">
+  		<a href="" id="closed"></a>
+		<p>中奖查询</p>
+		<div class="ztxtout clearfix">
+			<input type="text" id="querycode" placeholder="输入会员账号">
+			<a href="javascript:;" onclick="queryBtn()">查询</a>			
+		</div>
+		<table>
+			<tr>
+				<th>奖项</th>
+				<th>获奖时间</th>
+				<th>派送状态</th>
+			</tr>	
+          <tbody id="query_content">
+          
+          </tbody>
+		</table>
+      	<div class="page"><span class="cur">1</span> <a href="javascript:void(0);" onclick="queryPage(2);">2</a>  <a href="javascript:void(0);" onclick="queryPage(2);">下一页</a></div>
+	</div> 
+</div>	
+</body>
+</html>
+<script type="text/javascript" src="../static/../static/js/jquery.code.js"></script>
+<script>
+	var bRotate = false;
+	var bCode = '';
+	var bInfo = '';
+	$(function(){
+		//打开查询框
+		$('.queryBox').on('click', function(event){
+			event.preventDefault();
+			$('#queryBox').show();
+		});
+		//获奖名单
+		lotterylist();
+		//弹出框关闭
+		$('.qclose').click(function(){
+			$(this).parents('.zdtan').hide();
+		});
+		//start
+		$('.btn_start').click(function name(params) {
+			if(bRotate || bInfo)return;
+			bInfo = !bInfo;
+			$.ajax({
+				url: '/lottery/info',
+				dataType: 'json',
+				cache: false,
+				type: 'POST',
+				data: {
+					bonuscode: bCode,
+					csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()
+				},
+				success: function(obj) {
+					switch (obj.stat) {
+					case '-1':
+						logBox();
+	                    bInfo = !bInfo;
+						break;
+					case '-3':
+						msgBox('温馨提示', '您的会员账号已经没有抽奖机会了!');
+						bCode = "";
+						bInfo = !bInfo;
+						break;
+					case '5':
+						msgBox('温馨提示', obj.msg);
+						bInfo = !bInfo;
+						break;
+					case '0':
+						resultPid = obj.pId;
+						resultMsg = obj.msg;
+						rotateFn(obj.num, obj.desc, obj.msg);
+						bInfo = !bInfo;
+						break;
+					default:
+						msgBox('温馨提示', obj.msg);
+						bInfo = !bInfo;
+						break
+					}
+				},
+				failure: function() {},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
+					msgBox('温馨提示', '网络错误,请稍后再抽奖')
+				}
+			});
+		})
+
+		$('.tanbg,#closed,.pop_close').click(function(){
+				$(this).parents('.tanshow').hide();
+				return false;
+		});
+		var H = $('.tanmain,tanmainzh').outerHeight();
+		$(window).scroll(function(){
+			$('.tanmain,tanmainzh').css({'height':H,'margin-top':-H/2});
+		})
+	});
+		//摇
+		function rotateFn(arr, prize, msg){
+			$('.wanout img').attr('src','../static/images/10.gif');
+			$('.ii1').addClass('ball1');
+			$('.ii2').addClass('ball2');
+			$('.ii3').addClass('ball3');
+			$('.ii4').addClass('ball4');
+			$('.ii5').addClass('ball5');
+			$('.ii6').addClass('ball6');
+
+			setTimeout(function(){
+		     		 for(var ii=0; ii<arr.length; ii++){
+		     			 $('.wanout img').eq(ii).attr('src','../static/images/'+arr[ii]+'.png');
+		 			}
+					$('.ii1').removeClass('ball1');
+					$('.ii2').removeClass('ball2');
+					$('.ii3').removeClass('ball3');
+					$('.ii4').removeClass('ball4');
+					$('.ii5').removeClass('ball5');
+					$('.ii6').removeClass('ball6');
+					msgBox(prize, msg)
+			},3000);
+		};
+
+		function login(){
+    			var _bonuscode = $("#login-na").val();
+				if (_bonuscode == "") {
+					alert("会员账号不能为空!");
+					return false
+				}
+				bCode = _bonuscode;
+				var _obj = this;
+				$.ajax({
+					url: '/lottery/verify',
+					dataType: 'json',
+					cache: false,
+					type: 'POST',
+					data: {
+						bonuscode: bCode,
+						csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()
+					},
+					success: function(obj) {
+						switch (obj.stat) {
+						case '-1':
+							alert('您输入的会员账号不能为空!');
+							break;
+						case '-2':
+							alert('尊敬的会员：您好，您的会员账号不符合抽奖条件，请您查看下方的抽奖规则，或者联系在线客服咨询即可，谢谢~');
+							break;
+						case '0':
+							alert("验证成功,您还有"+obj.score+"次抽奖机会! \r\n请点击按钮抽奖!");
+							$(".tanshow").hide();
+							break;
+						default:
+							alert('网络错误,请稍后再抽奖');
+							break
+						}
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						var x = 1
+					}
+				});
+
+    }
+		function logBox(){
+			$('#logBox').show();
+		}
+		function lotterylist(){
+		$.ajax({
+			url: '/lottery/records',
+			dataType: 'json',
+			cache: false,
+			type: 'POST',
+			data: {csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()},
+			success: function (obj) {
+				if(obj){
+					var sAwardEle = "";
+					$.each(obj, function(i, award){
+						sAwardEle += '<li>恭喜 '+award.user+' 获得 '+award.prize+'</li>';
+					});
+
+					$("#lottery_list").html(sAwardEle);
+					$(".gaincn").myScroll({
+                      speed:60,
+                      rowHeight:26
+                    });
+				}
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				var x = 1;
+              console.log(11)
+			}
+		})
+	}
+	    function msgBox(_prize, _content) {
+            $('#msg').html(_content);
+            $('#prize').html(_prize);
+      	    $('.zdtan').show();
+        }
+        	$('.queryBox').click(function(){
+		$('#queryBox').show()
+	});
+
+    function queryBtn(){
+		var _bonuscode = $("#querycode").val();
+		if(_bonuscode == ""){
+			alert("输入会员账号不能为空!");
+			return false;
+		}
+		queryPage(1);
+	}
+	var pagesize = 5;
+
+    function queryPage(page){
+				$.ajax({
+					url: '/lottery/records/mine?action=querylist&p='+page+'&size='+pagesize,
+					dataType: 'json',
+					cache: false,
+					data : {querycode:$("#querycode").val()},
+					type: 'GET',
+					success: function (obj) {
+						if(obj.count != 0){
+							var sHtml1 = "";
+							var x = "";
+							$.each(obj.data, function(i, award){
+								x = (award.is_send == 1)?"<font style='color:#065a1d;'>已派彩</font>":"<font style='color:#ec0000;'>未派彩</font>";
+							    sHtml1 +="<tr><td>"+award.prize_name+"</td><td>"+award.win_time+"</td><td>"+x+"</td></tr>";
+							});
+							var sPage = Paging(page,pagesize,obj.count,2,"queryPage",'cur','','上一页','下一页');
+							$(".page").html(sPage);
+							$("#query_content").html(sHtml1);
+						}else{
+							$("#query_content").html("<tr><td colspan='3'>未找到相关信息</td></tr>");
+						}
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						var x = 1;
+					}
+				})
+}
+
+    function Paging(pageNum,pageSize,totalCount,skipCount,fuctionName,currentStyleName,currentUseLink,preText,nextText,firstText,lastText){
+	    var returnValue = "";
+	    var begin = 1;
+	    var end = 1;
+	    var totalpage = Math.floor(totalCount / pageSize);
+	    if(totalCount % pageSize >0){
+	        totalpage ++;
+	    }
+	    if(preText == null){
+	        firstText = "prev";
+
+	    }
+
+	    if(nextText == null){
+	        nextText = "next";
+	    }
+	    begin = pageNum - skipCount;
+	    end = pageNum + skipCount;
+
+	    if(begin <= 0){
+	        end = end - begin +1;
+	        begin = 1;
+	    }
+
+	    if(end > totalpage){
+	        end = totalpage;
+	    }
+	    for(count = begin;count <= end;count ++){
+	        if(currentUseLink){
+
+	            if(count == pageNum){
+	                returnValue += "<a class=\""+currentStyleName+"\" href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+count.toString()+");\">"+count.toString()+"</a> ";
+	            }
+	            else{
+	                returnValue += "<a href=\"javascript:void(0);\" onclick=\"" + fuctionName + "(" + count.toString() + ");\">" + count.toString() + "</a> ";
+	            }
+	        }
+	        else {
+	            if (count == pageNum) {
+	                returnValue += "<span class=\""+currentStyleName+"\">"+count.toString()+"</span> ";
+	            }
+	            else{
+	                returnValue += "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+count.toString()+");\">"+count.toString()+"</a> ";}
+	            }
+	        }
+	        if(pageNum - skipCount >1){
+	            returnValue = " ... "+returnValue;
+	        }
+	        if(pageNum + skipCount < totalpage){
+	            returnValue = returnValue + " ... ";
+	        }
+	        if(pageNum > 1){
+	            returnValue = "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+(pageNum - 1).toString()+");\"> " + preText + "</a> " + returnValue;
+	        }
+	        if(pageNum < totalpage){
+	            returnValue = returnValue + " <a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+(pageNum+1).toString()+");\">" + nextText + "</a>";
+	        }
+	        if(firstText!= null){
+	            if(pageNum >1){
+	                returnValue = "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"(1);\">" + firstText + "</a> " + returnValue;}
+	        }
+	        if(lastText !=null){
+	            if(pageNum < totalpage){
+	                returnValue = returnValue + " " + " <a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+totalpage.toString()+");\">" + lastText + "</a>";}
+	        }
+	        return returnValue;
+	}
+
+</script>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/css.css">
+	<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/Marquee.js"></script>
+	
+	<title></title>
+</head>
+<body>
+	<div class="zqtop">
+		<div class="zqtopmain clearfix">
+			<img src="../static/images/logo.png">
+			<ul>
+				<li><a href="http://www.9830bb.com/" target="_blank">官网首页</a></li>
+				<li><a href="http://www.jc9830.com" target="_blank">线路检测</a></li>
+				<li><a href="http://www.pay9830.com" target="_blank">快速充值</a></li>
+				<li><a href="http://www.kf9830.com" target="_blank">在线客服</a></li>
+				<li><a href="http://www.9830kk.com" target="_blank">活动规则</a></li>				
+			</ul>
+			<a href="" class="lia6"></a>
+			<a href="" class="lia7"></a>
+		</div>
+	</div>	
+	<div class="zqban"></div>
+	<div class="zqmain">
+		<div class="hjblock">	
+			<div class="gainlf left">
+				<h2>中奖公告</h2>
+				<div class="gaincn">	
+					<ul id="lottery_list">
+					</ul>									
+				</div>
+			</div>
+			<div class="dengcn right">
+				<div class="myrow">					
+					<a href="javascript:;" class="btn_ch queryBox"></a>
+					<a href="javascript:;" class="btn_start"></a>
+				</div>
+				
+				<div class="wanout">
+					<img src="../static/images/1.png" style="top: 35%;left: 23%;" class="dice dice1">
+					<img src="../static/images/4.png" style="top:28%;left: 60%;" class="dice dice2">
+					<img src="../static/images/2.png" style="top: 36%;left: 44%;" class="dice dice3">
+					<img src="../static/images/2.png" style="top: 20%;left: 41%;" class="dice dice4">
+					<img src="../static/images/6.png" style="top: 47%;left: 60%;" class="dice dice5">
+					<img src="../static/images/2.png" style="top: 54%;left: 30%;" class="dice dice6">
+				</div>
+			</div>
+		</div>
+		<div class="rllp">
+			<img src="../static/images/h1Img.png">
+			<table class="zqtab">
+				<tr class="trh">
+					<th width="154">别名</th>							
+					<th width="526">特征说明</th>							
+					<th>奖品设置</th>							
+				</tr>
+				<tr>
+					<td>一秀</td>
+					<td>六粒骰子中有一粒为<img src="../static/images/rl4.png"/></td>
+					<td>8元现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>二举</td>
+					<td>六粒骰子中有两粒为<img src="../static/images/rl4.png"/></td>
+					<td>18元现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>四进</td>
+					<td>六粒骰子中有四粒相同（除<img src="../static/images/rl4.png"/>外）</td>
+					<td>38现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>三红</td>
+					<td>六粒骰子中有三粒点数为<img src="../static/images/rl4.png"/>点</td>
+					<td>58现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>对堂</td>
+					<td>六粒骰子<img src="../static/images/rl1.png"/><img src="../static/images/rl2.png"/><img src="../static/images/rl3.png"/><img src="../static/images/rl4.png"/><img src="../static/images/rl5.png"/><img src="../static/images/rl6.png"/></td>
+					<td>88现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>四红</td>
+					<td>六粒骰子中有四粒为<img src="../static/images/rl4.png"/>.另外两粒除同时为<img src="../static/images/rl4.png"/>和<img src="../static/images/rl1.png"/>时</td>
+					<td>188现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>五子登科</td>
+					<td>六粒骰子中有五粒相同（除<img src="../static/images/rl4.png"/>外）</td>
+					<td>288现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>五红</td>
+					<td>六粒骰子中有五粒<img src="../static/images/rl4.png"/></td>
+					<td>388现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>黑六勃</td>
+					<td>六粒骰子全部为相同点.除<img src="../static/images/rl1.png"/>和<img src="../static/images/rl4.png"/></td>
+					<td>588现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>遍地锦</td>
+					<td>六粒骰子全部为<img src="../static/images/rl1.png"/></td>
+					<td>888现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>红六勃</td>
+					<td>六粒骰子全部为<img src="../static/images/rl4.png"/></td>
+					<td>1888现金筹码</td>					
+				</tr>
+				<tr>					
+					<td>插金花</td>
+					<td>六粒骰子四粒为<img src="../static/images/rl4.png"/>.两粒为<img src="../static/images/rl1.png"/></td>
+					<td>5888现金筹码</td>					
+				</tr>
+			</table>
+		</div>
+
+		<div class="rllp">
+			<img src="../static/images/h2Img.png">
+			<ul class="xizeul">
+				<li>1、达到活动要求→登入博饼网址→输入会员账号→获得抽奖次数→开始抽奖；</li>
+				<li>2、博饼次数计算将采集会员每日总有效投注金额来计算相应的抽奖次数（码量越高，抽中大奖机会越大）；</li>
+				<li>3、打码量计算周期9月12号-9月15号.单日所有平台总有效投注金额；</li>
+				<li>4、如果您达到参与博饼条件后，即可在次日（北京时间18:00至23:59）进行抽奖，需在当天完成，逾期视为放弃活动资格；</li>
+				<li>5、博中“现金筹码”的会员，无需申请，系统将在当天【23：59：59】抽奖活动结束前，陆续派送到中奖的会员账号内，“现金筹码”需达到1倍流水即可提款；</li>			
+			</ul>
+			<img src="../static/images/h3Img.png">
+			<ul class="xizeul">
+				<li>1、此活动为【澳门新葡京】系统小程序自动运行，获奖的概率完全遵循力学及自然概率，不涉及任何人工操
+作，抽奖结果以系统判定为准，不得争议；</li>
+				<li>2、所有会员账号都是以前一天打码返水后.总有效投注金额，来计算相对应的抽奖次数；</li>
+				<li>3、每个IP只能允许一位会员抽奖，如发现会员同一个IP下注册多个账号进行投注抽奖，公司有权拒绝赠送其
+彩金并做账号冻结处理，保证正常玩家的利益；</li>
+				<li>4、所有红利为随机派送, 如系统发生一些不可预测超出本站控制之外的技术错误, 或人为不可控制的因素, 则
+澳门新葡京保留最终处理权；</li>
+				<li>5、玩家不可以使用多账户参加本次活动，同姓名的同存款方式、同ip、同电脑均视为同一账户，“澳门新葡
+京”在会员重复申请会员账号时保留取消、收回会员相关优惠；</li>
+				<li>6、无论是个人或团体，如有任何威胁、滥用或使用不诚实方式套利的行为，经“澳门新葡京”风险部门审核，
+公司有权取消该会员所有优惠；</li>
+				<li>7、无风险投注包括在同时投注庄家、闲家；轮盘同时投注黑色、红色，单、双， 大、小；在运动博弈中，对
+冲或打对，有以上行为均不给予优惠；</li>
+				<li>8、本活动与其它优惠活动可同时享有；参与本活动视为您已经同意我司《优惠规则与条款》，澳门新葡京保
+留最终处理权；为避免文字上的理解差异,澳门新葡京保留最终解释权。</li>
+			</ul>
+		</div>
+		<p class="myft">Copyright © 澳门新葡京 Reserved</p>
+	</div>
+<!-- 未登录时要登录 -->
+<div id="logBox" class="tanshow" style="display: none;">
+	<div class="tanbg"></div>	
+ 	<div class="pop_box">
+        <div class="pop_header">
+          <h2>输入账号</h2>
+          <span class="close pop_close"></span>
+        </div>
+
+        <div class="pop_body">
+          <div class="text_box">
+
+              <p class="mt50"><input name="member_name" class="input" value="" id="login-na" placeholder="输入会员账号"></p>
+              <div class="mt10">
+                <button type="button" class="mt10 bet_btn" onclick="login()">登入抽奖</button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+</div>
+	<!-- 弹窗 -->
+<div id="msgBox" class="tanshow"  style="display: none;">
+	<div class="tanbg"></div>
+	<div class="pop_box">
+        <div class="pop_header">
+          <h2>温馨提示</h2>
+          <span class="close pop_close"></span>
+        </div>
+
+        <div class="pop_body">
+	         <div class="text_box">
+	             <h2 id="p_msg"></h2>
+	             <p>现金筹码将会自动打入您的账户,优惠券请联系<a href="http://kf9830.com">在线客服</a>或者<a href="tencent://message/?exe=qq&menu=yes&Uin=200983250">QQ客服</a>获取</p>
+	          </div>
+        </div>
+    </div>
+</div>	
+<!-- 获得的奖项 -->
+<div class="zdtan" style="display: none;">
+	<div class="zdtanbg"></div>
+	<div class="yttan">
+		<a href="javascript:;" class="qclose"></a>
+		<p class="congt">恭喜您博得<span id="msg"></span>中的<br/><span id="prize"></span></p>     
+	</div>
+</div>	
+ <div class="zdtan1" style="display: none;">
+	<div class="zdtanbg1"></div>
+	<div class="yttan1">	
+      <a href="javascript:;" class="qclose1"></a>
+		<p class="congt1"></p>     
+	</div>
+</div>
+<!-- 中奖查询 -->
+<div id="queryBox" class="tanshow" style="display: none;">
+	<div class="tanbg"></div>
+    <div class="tanmainzh">
+  		<a href="" id="closed"></a>
+		<p>中奖查询</p>
+		<div class="ztxtout clearfix">
+			<input type="text" id="querycode" placeholder="输入会员账号">
+			<a href="javascript:;" onclick="queryBtn()">查询</a>			
+		</div>
+		<table>
+			<tr>
+				<th>奖项</th>
+				<th>获奖时间</th>
+				<th>派送状态</th>
+			</tr>	
+          <tbody id="query_content">
+          
+          </tbody>
+		</table>
+      	<div class="page"><span class="cur">1</span> <a href="javascript:void(0);" onclick="queryPage(2);">2</a>  <a href="javascript:void(0);" onclick="queryPage(2);">下一页</a></div>
+	</div> 
+</div>
+{% csrf_token %}
+</body>
+</html>
+<script type="text/javascript" src="../static/js/jquery.code.js"></script>
+<script>
+	var bRotate = false;
+	var bCode = '';
+	var bInfo = '';
+	$(function(){
+		//打开查询框
+		$('.queryBox').on('click', function(event){
+			event.preventDefault();
+			$('#queryBox').show();
+		});
+		$('.lia7').click(function(event){
+		    event.preventDefault();
+		$('#queryBox').show()
+	    });
+		$('.lia6').click(function(event){
+		    event.preventDefault();
+		    $('#logBox').show();
+	    });
+		//获奖名单
+		lotterylist();
+		//弹出框关闭
+		$('.qclose').click(function(){
+			$(this).parents('.zdtan').hide();
+		});
+      $('.qclose1').click(function(){
+			$(this).parents('.zdtan1').hide();
+		});
+		//start
+		$('.btn_start').click(function name(params) {
+			if(bRotate || bInfo)return;
+			bInfo = !bInfo;
+			$.ajax({
+				url: '/lottery/info',
+				dataType: 'json',
+				cache: false,
+				type: 'POST',
+				data: {
+					bonuscode: bCode,
+					csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()
+				},
+				success: function(obj) {
+					switch (obj.stat) {
+					case '-1':
+						logBox();
+	                    bInfo = !bInfo;
+						break;
+					case '-3':
+						msgBox('温馨提示', '您的会员账号已经没有抽奖机会了!');
+						bCode = "";
+						bInfo = !bInfo;
+						break;
+					case '5':
+						msgBox('温馨提示', obj.msg);
+						bInfo = !bInfo;
+						break;
+					case '0':
+						resultPid = obj.pId;
+						resultMsg = obj.msg;
+						rotateFn(obj.num, obj.desc, obj.msg, resultPid);
+						bInfo = !bInfo;
+						break;
+					default:
+						msgBox('温馨提示', obj.msg);
+						bInfo = !bInfo;
+						break
+					}
+				},
+				failure: function() {},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
+					msgBox('温馨提示', '网络错误,请稍后再抽奖')
+				}
+			});
+		})
+
+		$('.tanbg,#closed,.pop_close').click(function(){
+				$(this).parents('.tanshow').hide();
+				return false;
+		});
+		var H = $('.tanmain,tanmainzh').outerHeight();
+		$(window).scroll(function(){
+			$('.tanmain,tanmainzh').css({'height':H,'margin-top':-H/2});
+		})
+	});
+		//摇
+		function rotateFn(arr, prize, msg, pid){
+			$('.dice').addClass('active');
+			setTimeout(function(){
+				 for(var ii=0; ii<arr.length; ii++){
+					 $('.wanout img').eq(ii).attr('src','../static/images/'+arr[ii]+'.png');
+				}
+				prizeBox(prize, msg, pid)
+				$('.dice').removeClass('active');
+			},1000);
+		};
+
+		function login(){
+    			var _bonuscode = $("#login-na").val();
+				if (_bonuscode == "") {
+					alert("会员账号不能为空!");
+					return false
+				}
+				bCode = _bonuscode;
+				var _obj = this;
+				$.ajax({
+					url: '/lottery/verify',
+					dataType: 'json',
+					cache: false,
+					type: 'POST',
+					data: {
+						bonuscode: bCode,
+						csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()
+					},
+					success: function(obj) {
+						switch (obj.stat) {
+						case '-1':
+							alert('您输入的会员账号不能为空!');
+							break;
+						case '-2':
+							alert('尊敬的会员：您好，您的会员账号不符合抽奖条件，请您查看下方的抽奖规则，或者联系在线客服咨询即可，谢谢~');
+							break;
+						case '0':
+							alert("验证成功,您还有"+obj.score+"次抽奖机会! \r\n请点击按钮抽奖!");
+							$(".tanshow").hide();
+							break;
+						default:
+							alert('网络错误,请稍后再抽奖');
+							break
+						}
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						var x = 1
+					}
+				});
+
+    }
+		function logBox(){
+			$('#logBox').show();
+		}
+		function lotterylist(){
+		$.ajax({
+			url: '/lottery/records',
+			dataType: 'json',
+			cache: false,
+			type: 'POST',
+			data: {csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val()},
+			success: function (obj) {
+				if(obj){
+					var sAwardEle = "";
+					$.each(obj, function(i, award){
+						sAwardEle += '<li>恭喜会员 '+award.user+'<br/> 获得'+award.prize+'<span>'+'  '+award.desc+'</span></li>';
+					});
+
+					$("#lottery_list").html(sAwardEle);
+					$('.gaincn').kxbdSuperMarquee({
+						isMarquee:true,
+						isEqual:false,
+						scrollDelay:40,					
+						direction:'up'
+					});
+				}
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				var x = 1;
+              console.log(11)
+			}
+		})
+	}
+	function prizeBox(_prize, _content, _pid) {  
+      		 $('#msg').text();
+             $('#prize').text();
+            if(parseInt(_pid)==12){
+                    console.log('thanks');
+                    $('.congt1').html('<h6>很遗憾您与大奖擦肩而过</h6>再接再厉');
+		    		$('.zdtan1').show();
+                    }
+                else{                  
+                $('#msg').text(_content);
+                $('#prize').text(_prize);
+                $('.zdtan').show();
+                }
+	}
+
+	function msgBox(_title, _content){
+		$('#p_msg').html(_content);
+      	$('#msgBox').show();
+	}
+
+    function queryBtn(){
+		var _bonuscode = $("#querycode").val();
+		if(_bonuscode == ""){
+			alert("输入会员账号不能为空!");
+			return false;
+		}
+		queryPage(1);
+	}
+	var pagesize = 5;
+
+    function queryPage(page){
+				$.ajax({
+					url: '/lottery/records/mine?action=querylist&p='+page+'&size='+pagesize,
+					dataType: 'json',
+					cache: false,
+					data : {querycode:$("#querycode").val()},
+					type: 'GET',
+					success: function (obj) {
+						if(obj.count != 0){
+							var sHtml1 = "";
+							var x = "";
+							$.each(obj.data, function(i, award){
+								x = (award.is_send == 1)?"<font style='color:#065a1d;'>已派彩</font>":"<font style='color:#ec0000;'>未派彩</font>";
+							    sHtml1 +="<tr><td>"+award.prize_desc+"</td><td>"+award.win_time+"</td><td>"+x+"</td></tr>";
+							});
+							var sPage = Paging(page,pagesize,obj.count,2,"queryPage",'cur','','上一页','下一页');
+							$(".page").html(sPage);
+							$("#query_content").html(sHtml1);
+						}else{
+							$("#query_content").html("<tr><td colspan='3'>未找到相关信息</td></tr>");
+						}
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						var x = 1;
+					}
+				})
+}
+
+    function Paging(pageNum,pageSize,totalCount,skipCount,fuctionName,currentStyleName,currentUseLink,preText,nextText,firstText,lastText){
+	    var returnValue = "";
+	    var begin = 1;
+	    var end = 1;
+	    var totalpage = Math.floor(totalCount / pageSize);
+	    if(totalCount % pageSize >0){
+	        totalpage ++;
+	    }
+	    if(preText == null){
+	        firstText = "prev";
+
+	    }
+
+	    if(nextText == null){
+	        nextText = "next";
+	    }
+	    begin = pageNum - skipCount;
+	    end = pageNum + skipCount;
+
+	    if(begin <= 0){
+	        end = end - begin +1;
+	        begin = 1;
+	    }
+
+	    if(end > totalpage){
+	        end = totalpage;
+	    }
+	    for(count = begin;count <= end;count ++){
+	        if(currentUseLink){
+
+	            if(count == pageNum){
+	                returnValue += "<a class=\""+currentStyleName+"\" href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+count.toString()+");\">"+count.toString()+"</a> ";
+	            }
+	            else{
+	                returnValue += "<a href=\"javascript:void(0);\" onclick=\"" + fuctionName + "(" + count.toString() + ");\">" + count.toString() + "</a> ";
+	            }
+	        }
+	        else {
+	            if (count == pageNum) {
+	                returnValue += "<span class=\""+currentStyleName+"\">"+count.toString()+"</span> ";
+	            }
+	            else{
+	                returnValue += "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+count.toString()+");\">"+count.toString()+"</a> ";}
+	            }
+	        }
+	        if(pageNum - skipCount >1){
+	            returnValue = " ... "+returnValue;
+	        }
+	        if(pageNum + skipCount < totalpage){
+	            returnValue = returnValue + " ... ";
+	        }
+	        if(pageNum > 1){
+	            returnValue = "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+(pageNum - 1).toString()+");\"> " + preText + "</a> " + returnValue;
+	        }
+	        if(pageNum < totalpage){
+	            returnValue = returnValue + " <a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+(pageNum+1).toString()+");\">" + nextText + "</a>";
+	        }
+	        if(firstText!= null){
+	            if(pageNum >1){
+	                returnValue = "<a href=\"javascript:void(0);\" onclick=\""+fuctionName+"(1);\">" + firstText + "</a> " + returnValue;}
+	        }
+	        if(lastText !=null){
+	            if(pageNum < totalpage){
+	                returnValue = returnValue + " " + " <a href=\"javascript:void(0);\" onclick=\""+fuctionName+"("+totalpage.toString()+");\">" + lastText + "</a>";}
+	        }
+	        return returnValue;
+	}
+
+</script>
